@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+ 
+.resume {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+}
+ 
+/* SIDEBAR */
+.sidebar {
+    width: 30%;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+ 
+.profile {
+    text-align: center;
+}
+ 
+.profile img {
+    border-radius: 50%;
+    width: 120px;
+}
+ 
+.profile h2 {
+    margin: 10px 0 5px;
+}
+ 
+.section {
+    margin-top: 20px;
+}
+ 
+.section h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+ 
+/* MAIN */
+.main {
+    width: 70%;
+    padding: 20px;
+}
+ 
+.main h1 {
+    margin: 0;
+}
+ 
+.main h4 {
+    color: gray;
+    margin-bottom: 20px;
+}
+ 
+.content {
+    margin-bottom: 20px;
+}
+ 
+ul {
+    padding-left: 20px;
+}
