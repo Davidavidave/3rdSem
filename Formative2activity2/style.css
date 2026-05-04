@@ -1,0 +1,24 @@
+body {
+    font-family: Arial;
+    background-color: #eef;
+    padding: 30px;
+}
+
+.card {
+    background: #fff;
+    width: 350px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+input, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+.output {
+    margin-top: 15px;
+    font-weight: bold;
+}
