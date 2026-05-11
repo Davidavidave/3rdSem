@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+
+    /* center everything */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+
+    text-align: center; /* center text */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+}
+
+ul {
+    list-style-position: inside;
+    padding: 0;
+}
