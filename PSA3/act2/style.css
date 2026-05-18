@@ -1,0 +1,25 @@
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+table,
+td {
+  border: 2px solid #666;
+}
+td {
+  padding: 10px;
+}
+.header-row {
+  text-align: center;
+  font-weight: normal;
+}
+.label-cell {
+  width: 40%;
+  text-align: center;
+}
+.val-cell {
+  width: 60%;
+  text-align: center;
+}
