@@ -2,11 +2,11 @@
 <?php
 $active_friend = isset($_GET['friend']) ? intval($_GET['friend']) : 0;
 $friends = [
-    1 => 'fren1.php',
-    2 => 'fren2.php',
-    3 => 'fren3.php',
-    4 => 'fen4.php',
-    5 => 'fren5.php'
+    1 => 'story1.php',
+    2 => 'story2.php',
+    3 => 'story3.php',
+    4 => 'story4.php',
+    5 => 'story5.php'
 ];
 ?>
 <!DOCTYPE html>
