@@ -1,8 +1,7 @@
-<h2>The Clockwork Bird</h2>
-<img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=600" alt="Antique Clockwork">
+<h2>Jay Contreras</h2>
+<img src="jay.jpg" alt="Jay Contreras">
 <p>
-    Professor Alistair spent forty long years trying to capture the essence of a songbird using brass gears, 
-    copper wire, and pure determination. Every attempt sat completely frozen upon his crowded workbench. 
-    It wasn't until a genuine tear of frustration slipped down his cheek and touched the primary spring mechanism 
-    that the tiny metallic wings finally fluttered to life...
+   He is Jay, a talented one of my talented friend who loves music
+   he is a rakista and vocalist of kamikazee, he is a very good friend to us and we are
+    very lucky to have him as a friend.
 </p>

@@ -1,8 +1,7 @@
-<h2>The Island in the Clouds</h2>
-<img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=600" alt="Floating Islands">
+<h2>Babalu</h2>
+<img src="babalu.jpg" alt="Babalu">
 <p>
-    Captain Marina anchored her airship, *The Skyward Venture*, against a massive floating island that was 
-    unrecorded on any geographical map. Strange, weightless flora blossomed across white stone cliffs. 
-    As she set foot onto the soft, floating moss, she discovered ancient ruins mirroring a city that existed 
-    directly below on the Earth's surface...
+    He is Babalu, a funny like Rene, and I was happy when they have a TV show with rene,
+    because they are both funny and they make me laugh, but unfortunately Babalu also passed away, but I am lucky that I met him because 
+    he make me laugh when he was still alive like Rene.
 </p>

@@ -78,14 +78,14 @@
 </head>
 <body>
 
-    <h1>A Real Short Stories</h1>
+    <h1>A Real Short stories of My Friend</h1>
     
     <div class="story-grid">
-        <a href="?story=1" class="story-card <?php echo (isset($_GET['story']) && $_GET['story'] == '1') ? 'active' : ''; ?>">Story 1</a>
-        <a href="?story=2" class="story-card <?php echo (isset($_GET['story']) && $_GET['story'] == '2') ? 'active' : ''; ?>">Story 2</a>
-        <a href="?story=3" class="story-card <?php echo (isset($_GET['story']) && $_GET['story'] == '3') ? 'active' : ''; ?>">Story 3</a>
-        <a href="?story=4" class="story-card <?php echo (isset($_GET['story']) && $_GET['story'] == '4') ? 'active' : ''; ?>">Story 4</a>
-        <a href="?story=5" class="story-card <?php echo (isset($_GET['story']) && $_GET['story'] == '5') ? 'active' : ''; ?>">Story 5</a>
+        <a href="?story=1" class="story-card <?php echo (isset($_GET['story']) && $_GET['story'] == '1') ? 'active' : ''; ?>">Malupiton</a>
+        <a href="?story=2" class="story-card <?php echo (isset($_GET['story']) && $_GET['story'] == '2') ? 'active' : ''; ?>">Jay Contreras</a>
+        <a href="?story=3" class="story-card <?php echo (isset($_GET['story']) && $_GET['story'] == '3') ? 'active' : ''; ?>">Rene Requiestas</a>
+        <a href="?story=4" class="story-card <?php echo (isset($_GET['story']) && $_GET['story'] == '4') ? 'active' : ''; ?>">Babalu</a>
+        <a href="?story=5" class="story-card <?php echo (isset($_GET['story']) && $_GET['story'] == '5') ? 'active' : ''; ?>">Rico Blanco</a>
     </div>
 
     <div class="story-viewer">
