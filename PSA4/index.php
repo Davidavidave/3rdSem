@@ -16,7 +16,7 @@
             text-align: center;
             color: #2c3e50;
         }
-        /* Grid layout mirroring the document format */
+       
         .story-grid {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
@@ -45,7 +45,7 @@
             border-color: #2ecc71;
             background-color: #e8f8f5;
         }
-        /* Container where the dynamic story content updates */
+        
         .story-viewer {
             background: #ffffff;
             border: 1px solid #dcdde1;
@@ -78,7 +78,7 @@
 </head>
 <body>
 
-    <h1>Interactive Storybook Collection</h1>
+    <h1>A Real Short Stories</h1>
     
     <div class="story-grid">
         <a href="?story=1" class="story-card <?php echo (isset($_GET['story']) && $_GET['story'] == '1') ? 'active' : ''; ?>">Story 1</a>
@@ -90,19 +90,18 @@
 
     <div class="story-viewer">
         <?php
-        // Checks if a specific story parameter was clicked
+        
         if (isset($_GET['story'])) {
             $story = $_GET['story'];
             
-            // Validates parameter to ensure it safely includes only files 1 through 5
+           
             if (in_array($story, ['1', '2', '3', '4', '5'])) {
-                // Safeguards framework integrity using require for critical execution files
+               
                 require "story" . $story . ".php"; 
             } else {
                 echo "<p style='text-align:center; color:red;'>Invalid Story Selection.</p>";
             }
         } else {
-            // Default placeholder message when no card has been selected yet
             echo "<h3 style='text-align:center; color:#7f8c8d;'>Please click on any story card above to read the tale!</h3>";
         }
         ?>
