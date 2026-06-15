@@ -113,7 +113,7 @@ if(isset($_SESSION['colors'])){
 
 </div>
 
-<a href='FavoriteColor.php'>Back</a>
+<a href='FavoriteColor.php'>Back</a>    
 
 </div>
 
