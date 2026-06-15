@@ -75,12 +75,12 @@ $names = [
                 </td>
                 
                 <td>
-                    <?php 
+                    <?php
                         $pos = strpos($name, 'a');
                         echo ($pos === false) ? 'Not Found' : $pos;
                     ?>
                 </td>
-                
+                                
                 <td><?php echo htmlspecialchars(strrev($name)); ?></td>
             </tr>
         <?php endforeach; ?>
@@ -89,3 +89,4 @@ $names = [
 
 </body>
 </html>
+

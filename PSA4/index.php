@@ -1,54 +1,112 @@
-
-<?php
-$active_friend = isset($_GET['friend']) ? intval($_GET['friend']) : 0;
-$friends = [
-    1 => 'fren1.php',
-    2 => 'fren2.php',
-    3 => 'fren3.php',
-    4 => 'fen4.php',
-    5 => 'fren5.php'
-];
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Friends Anthology</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Short Story Web Platform</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+       
+        .story-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .story-card {
+            background: #ffffff;
+            border: 2px solid #bdc3c7;
+            border-radius: 8px;
+            padding: 40px 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .story-card:hover {
+            border-color: #3498db;
+            background-color: #ebf5fb;
+            transform: translateY(-5px);
+        }
+        .story-card.active {
+            border-color: #2ecc71;
+            background-color: #e8f8f5;
+        }
+        
+        .story-viewer {
+            background: #ffffff;
+            border: 1px solid #dcdde1;
+            border-radius: 8px;
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .story-viewer img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .story-viewer h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .story-viewer p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div>
-                <h1>Circle of Friends</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Stories</a></li>
-                    <li><a href="#">Gallery</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <main class="story-grid">
-            <?php foreach ($friends as $id => $file): ?>
-                <a href="?friend=<?php echo $id; ?>" class="story-card">
-                    <?php include($file); ?>
-                </a>
-            <?php endforeach; ?>
-        </main>
-
-        <?php if ($active_friend && isset($friends[$active_friend])): ?>
-            <section class="story-detail">
-                <?php include("fren1{$active_friend}.php"); ?>
-            </section>
-        <?php endif; ?>
-
-        <footer class="footer">
-            <p>Copyright &copy; <?php echo date("Y"); ?> Friends Memory Book</p>
-        </footer>
+    <h1>A Real Short stories of My Friend</h1>
+    
+    <div class="story-grid">
+        <a href="?story=1" class="story-card <?php echo (isset($_GET['story']) && $_GET['story'] == '1') ? 'active' : ''; ?>">Malupiton</a>
+        <a href="?story=2" class="story-card <?php echo (isset($_GET['story']) && $_GET['story'] == '2') ? 'active' : ''; ?>">Jay Contreras</a>
+        <a href="?story=3" class="story-card <?php echo (isset($_GET['story']) && $_GET['story'] == '3') ? 'active' : ''; ?>">Rene Requiestas</a>
+        <a href="?story=4" class="story-card <?php echo (isset($_GET['story']) && $_GET['story'] == '4') ? 'active' : ''; ?>">Babalu</a>
+        <a href="?story=5" class="story-card <?php echo (isset($_GET['story']) && $_GET['story'] == '5') ? 'active' : ''; ?>">Rico Blanco</a>
     </div>
+
+    <div class="story-viewer">
+        <?php
+        
+        if (isset($_GET['story'])) {
+            $story = $_GET['story'];
+            
+           
+            if (in_array($story, ['1', '2', '3', '4', '5'])) {
+               
+                require "story" . $story . ".php"; 
+            } else {
+                echo "<p style='text-align:center; color:red;'>Invalid Story Selection.</p>";
+            }
+        } else {
+            echo "<h3 style='text-align:center; color:#7f8c8d;'>Please click on any story card above to read the tale!</h3>";
+        }
+        ?>
+    </div>
+
 </body>
 </html>
+
