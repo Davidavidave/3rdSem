@@ -44,8 +44,8 @@ $result = $conn->query($sql);
         <th>Age</th>
         <th>Address</th>
         <th>Color</th>
-        <th>Height</th>
-        <th>Weight</th>
+        <th>Height(foot)</th>
+        <th>Weight(Kg)</th>
     </tr>
 
     <?php
