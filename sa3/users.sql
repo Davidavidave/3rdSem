@@ -1,0 +1,17 @@
+
+CREATE DATABASE IF NOT EXISTS sa3_db;
+USE sa3_db;
+
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    firstname VARCHAR(50) NOT NULL,
+    middlename VARCHAR(50),
+    lastname VARCHAR(50) NOT NULL,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    birthday DATE NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    contact VARCHAR(20) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

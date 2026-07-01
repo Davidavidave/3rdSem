@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:420px;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.container h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+
+.input-group{
+    margin-bottom:15px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+    color:#444;
+}
+
+.input-group input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    outline:none;
+    transition:.3s;
+}
+
+.input-group input:focus{
+    border-color:#007bff;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#007bff;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+.message{
+    padding:12px;
+    margin-bottom:15px;
+    border-radius:5px;
+    text-align:center;
+}
+
+.success{
+    background:#d4edda;
+    color:#155724;
+}
+
+.error{
+    background:#f8d7da;
+    color:#721c24;
+}
+
+.info-box{
+    margin-top:25px;
+    border-top:1px solid #ddd;
+    padding-top:20px;
+}
+
+.info-box h3{
+    margin-bottom:15px;
+    color:#333;
+}
+
+.info-box p{
+    margin:8px 0;
+}
+
+.checkbox{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.checkbox input{
+    width:auto;
+    margin-right:10px;
+}
+
+a{
+    text-decoration:none;
+    color:#007bff;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+.logout{
+    float:right;
+    color:red;
+    font-weight:bold;
+}
+
+.reset-box{
+    margin-top:30px;
+    border-top:1px solid #ddd;
+    padding-top:20px;
+}
+
+.reset-box h3{
+    margin-bottom:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:left;
+}
+
+table th{
+    background:#007bff;
+    color:white;
+}
+
+@media(max-width:500px){
+
+.container{
+    width:95%;
+}
+
+}
